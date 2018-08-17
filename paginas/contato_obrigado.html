@@ -28,7 +28,7 @@
         <link rel="stylesheet" type="text/css" href="../css/index.css" />
         <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.min.css" />
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-        <title>PLAYFC</title>
+        <title>KOSTAL</title>
 		<script type="text/javascript" src="../js/jquery.min.js"></script>
 		<script type="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="../js/cordova.js"></script>
@@ -37,26 +37,38 @@
 	    <div data-role="page" style="background:#FFF;">
 		    <div class="topo">
 			    <div class="logotipo">
-				    <div style="margin:0px 80px; text-align:center; color:#214629;"><b>CADASTRO<b></div>
+				    <div style="margin:0px 80px; text-align:center; color:#FFF;"><b>CONTATO<b></div>
 				</div>
 		    </div>
 
 			<div role="main" class="ui-content">
-				<div id="id_conteudo_cadastro_sucesso" style="text-align:center; padding:50px 0px 50px 0px; color:#999; font-size:14px; text-transform:none; text-align:justify;">
+				<div id="id_conteudo_cadastro_sucesso" style="text-align:center; padding:50px 0px 50px 0px; color:#000; font-size:14px; text-transform:none; text-align:justify;">
 					<br><br>
 					<h1><b>SUCESSO!<b></h1>
-					<p style="font-size:13px; text-align:center; font-weight:normal;">Cadastro realizado com sucesso!<br>Seu cadastro foi concluído e você já pode acessar o app.</p>
+					<p style="font-size:13px; text-align:center; font-weight:normal;">Mensagem enviada com sucesso!<br>Sua mensagem foi enviada com sucesso, em breve entraremos em contato.</p>
 					<br><br>
-					<div style="border:1px solid #ABCE43; border-radius:10px; background:#ABCE43; color:#000; padding:10px; margin-top:20px; text-shadow: none; text-transform:none; text-align:center;" id="bt_cadastro_acessar">Voltar para tela de login</div>
+					<div style="border:1px solid #ABCE43; border-radius:10px; background:#ABCE43; color:#000; padding:10px; margin-top:20px; text-shadow: none; text-transform:none; text-align:center;" id="bt_cadastro_acessar">Voltar para a home</div>
 				</div>
+			</div>
+			
+			<div class="botoes-rodape">
+				<div class="botoes-rodape1" id="contato-obrigado-rodape1"><i class="fa fa-home" aria-hidden="true"></i>Home</div>
+				<div class="botoes-rodape2" id="contato-obrigado-rodape2"><i class="fa fa-industry" aria-hidden="true"></i>Distribuidor</div>
+				<div class="botoes-rodape3" id="contato-obrigado-rodape3"><i class="fa fa-users" aria-hidden="true"></i>Representante</div>
+				<div class="botoes-rodape4" id="contato-obrigado-rodape4"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contato</div>
 			</div>
 		
 			
 			<script>
 				
 				$("#bt_cadastro_acessar").click(function(){
-					$.mobile.changePage("login.html", { transition: "fade", changeHash: false });
+					$.mobile.changePage("home.html", { transition: "fade", changeHash: false });
 				});
+				
+				$('#contato-obrigado-rodape1').click(function(){ $.mobile.changePage("home.html", { transition: "fade", changeHash: false }); });
+				$('#contato-obrigado-rodape2').click(function(){ $.mobile.changePage("distribuidores.html", { transition: "fade", changeHash: false }); });
+				$('#contato-obrigado-rodape3').click(function(){ $.mobile.changePage("representantes.html", { transition: "fade", changeHash: false }); });
+				$('#contato-obrigado-rodape4').click(function(){  });
 				
 			</script>
 		
