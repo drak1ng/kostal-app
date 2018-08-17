@@ -60,6 +60,10 @@
 			
 			<script>
 				
+				$.get("http://kostal.projetotemporario.com.br/app_api/representantes.php", function(data){
+					$("#representantes-conteudo").html(data);
+				});
+				
 				$('#representantes-rodape1').click(function(){ $.mobile.changePage("home.html", { transition: "fade", changeHash: false }); });
 				$('#representantes-rodape2').click(function(){ $.mobile.changePage("distribuidores.html", { transition: "fade", changeHash: false }); });
 				$('#representantes-rodape3').click(function(){  });

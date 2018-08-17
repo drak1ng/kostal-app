@@ -60,6 +60,10 @@
 			
 			<script>
 				
+				$.get("http://kostal.projetotemporario.com.br/app_api/distribuidores.php", function(data){
+					$("#distribuidores-conteudo").html(data);
+				});
+				
 				$('#distribuidores-rodape1').click(function(){ $.mobile.changePage("home.html", { transition: "fade", changeHash: false }); });
 				$('#distribuidores-rodape2').click(function(){  });
 				$('#distribuidores-rodape3').click(function(){ $.mobile.changePage("representantes.html", { transition: "fade", changeHash: false }); });
