@@ -21,7 +21,7 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=375, viewport-fit=cover" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover" />
 		<!--<meta name="viewport" content="user-scalable=no, initial-scale=0.8, maximum-scale=0.8, minimum-scale=0.8, width=375, viewport-fit=cover" />-->
         <link rel="stylesheet" type="text/css" href="../css/index.css" />
         <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.min.css" />
@@ -36,30 +36,28 @@
 	    
 	    <div data-role="page">
 
-
+		    <div class="topo">
+			    <div class="logotipo">
+				    <div style="min-width:10px; float:left; color:#FFF; padding:10px 10px; margin:-10px 0px -10px -10px;" id="bt-home-voltar"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+				    <div style="margin:0px 80px; text-align:center; color:#FFF; font-family:'roboto';" id="campeonatos-titulo"><b>KOSTAL<b></div>
+				</div>
+		    </div>
 
 			<div role="main" class="ui-content" style="text-align:center;">
 				<div class="conteudo" id="home-conteudo">
-					<div style="padding-top:120px; text-align:center; font-size:13px; color:#FFF;">
-						<img src="../img/ajax-loader.gif" /><br><br>
+					<div style="padding-top:120px; text-align:center; font-size:13px; color:#444;">
+						<img src="../img/loading.gif" /><br><br>
 						Aguarde carregando...
 					</div>
 				</div>
 			</div>
 			
 			<div class="botoes-rodape">
-				<div class="botoes-rodape1" id="home-rodape1"><i class="fa fa-home" aria-hidden="true"></i>Página Inicial</div>
-				<div class="botoes-rodape2" id="home-rodape2"><i class="fa fa-futbol-o" aria-hidden="true"></i>Campeonatos</div>
-				<div class="botoes-rodape3" id="home-rodape3"><i class="fa fa-cogs" aria-hidden="true"></i>Preferências</div>
+				<div class="botoes-rodape1" id="home-rodape1"><i class="fa fa-home" aria-hidden="true"></i>Home</div>
+				<div class="botoes-rodape2" id="home-rodape2"><i class="fa fa-industry" aria-hidden="true"></i>Distribuidor</div>
+				<div class="botoes-rodape2" id="home-rodape2"><i class="fa fa-users" aria-hidden="true"></i>Representante</div>
+				<div class="botoes-rodape3" id="home-rodape3"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contato</div>
 			</div>
-			
-			<style>
-				#home_conteudo					{ margin:-11px -26px 60px -26px; padding:20px; }
-				.home-itens1						{ border:1px solid #000; background:#FFF; width:calc(100% - 12px); margin:5px; float:left; text-align:center; border-radius:6px; padding:10px 0px; font-weight:700; }
-				.home-itens1 i					{ display:block; font-size:50px; color:#666; text-align:center; padding:10px 0px; }
-				.home-itens2						{ border:1px solid #000; background:#666; width:calc(50% - 12px); margin:5px; float:left; text-align:center; border-radius:6px; padding:10px 0px; color:#CCC; }
-				.home-itens2 i					{ display:block; font-size:30px; color:#ccc; text-align:center; padding:10px 0px; }
-			</style>
 			
 			<script>
 				
