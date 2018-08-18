@@ -38,7 +38,7 @@
 		    <div class="topo">
 			    <div class="logotipo">
 				    <div style="min-width:10px; float:left; color:#FFF; padding:10px 10px; margin:-10px 0px -10px -10px;" id="bt-grupos-voltar"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-				    <div style="margin:0px 80px; text-align:center; color:#FFF; font-family:'roboto'; text-transform:uppercase;"><b>GRUPOS<b></div>
+				    <div style="margin:0px 80px; text-align:center; color:#FFF; font-family:'roboto'; text-transform:uppercase;" id="grupos-titulo"><b>GRUPOS<b></div>
 				</div>
 		    </div>
 
@@ -67,6 +67,8 @@
 				if(tipo_id=="Partes"){ titulo="Peças"; }
 				if(tipo_id=="Acessórios"){ titulo="Acessórios"; }
 				if(tipo_id=="Concessionárias"){ titulo="Concessionárias"; }
+				
+				$('#grupos-titulo').html('<b>'+titulo+'</b>');
 				
 				$.get("http://kostal.projetotemporario.com.br/app_api/grupos.php", { id:tipo_id }, function(data){
 					$("#grupos-conteudo").html(data);
