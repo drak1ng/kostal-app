@@ -92,8 +92,12 @@
 				
 				document.addEventListener("backbutton", function(e){
 					if(paginaAppAtual!='home'){
+						alert('voltar');
 						$.mobile.changePage("home.html", { transition: "none", changeHash: false });
 					    e.preventDefault();						
+					}else{
+						alert('sair');
+						navigator.app.exitApp();
 					}
 				});
 				
