@@ -60,7 +60,9 @@
 			
 			<script>
 				
-				$.get("http://kostal.projetotemporario.com.br/app_api/distribuidores.php", function(data){
+				paginaAppAtual = "distribuidores";
+				
+				$.get("https://kostalbrasil.com.br/app_api/distribuidores.php", function(data){
 					$("#distribuidores-conteudo").html(data);
 				});
 				

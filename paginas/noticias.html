@@ -61,9 +61,11 @@
 			
 			<script>
 				
+				paginaAppAtual = "noticias";
+				
 				var noticia_id = window.localStorage.getItem('noticia_id');
 				
-				$.get("http://kostal.projetotemporario.com.br/app_api/noticias.php", { id:noticia_id }, function(data){
+				$.get("https://kostalbrasil.com.br/app_api/noticias.php", { id:noticia_id }, function(data){
 					$("#noticias-conteudo").html(data);
 				});
 				

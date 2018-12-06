@@ -60,7 +60,9 @@
 			
 			<script>
 				
-				$.get("http://kostal.projetotemporario.com.br/app_api/home.php", function(data){
+				paginaAppAtual = "home";
+				
+				$.get("https://kostalbrasil.com.br/app_api/home.php", function(data){
 					$("#home-conteudo").html(data);
 				});
 				

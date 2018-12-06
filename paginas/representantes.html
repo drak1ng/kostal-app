@@ -60,7 +60,9 @@
 			
 			<script>
 				
-				$.get("http://kostal.projetotemporario.com.br/app_api/representantes.php", function(data){
+				paginaAppAtual = "representantes";
+				
+				$.get("https://kostalbrasil.com.br/app_api/representantes.php", function(data){
 					$("#representantes-conteudo").html(data);
 				});
 				

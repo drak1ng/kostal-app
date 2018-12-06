@@ -61,9 +61,11 @@
 			
 			<script>
 				
+				paginaAppAtual = "produto-lista";
+				
 				var grupo_id = window.localStorage.getItem('grupo_id');
 				
-				$.get("http://kostal.projetotemporario.com.br/app_api/produtos.php", { id:grupo_id }, function(data){
+				$.get("https://kostalbrasil.com.br/app_api/produtos.php", { id:grupo_id }, function(data){
 					$("#produtos-conteudo").html(data);
 				});
 				

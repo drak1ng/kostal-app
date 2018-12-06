@@ -71,6 +71,8 @@
 			
 			<script>
 				
+				paginaAppAtual = "contato";
+				
 				$('#contato_celular').mask('(00) 00000-0000');
 				
 				$("#bt_contato_salvar").click(function(){
@@ -83,7 +85,7 @@
 					if(celular==""){ alert("O campo Celular deve ser preenchido"); return false; }
 					if(email==""){ alert("O campo E-mail deve ser preenchido"); return false; }
 					
-					$.get("http://kostal.projetotemporario.com.br/app_api/contato.php", { nome:nome, celular:celular, email:email, mensagem:mensagem }, function(data){
+					$.get("https://kostalbrasil.com.br/app_api/contato.php", { nome:nome, celular:celular, email:email, mensagem:mensagem }, function(data){
 						$.mobile.changePage("contato_obrigado.html", { transition: "fade", changeHash: false });
 					});
 					

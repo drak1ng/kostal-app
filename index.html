@@ -52,6 +52,7 @@
 	    <div data-role="page"></div>
 			<script>
 				
+				var paginaAppAtual = "";
 				var jaFicouOffline = 0;
 				
 				document.addEventListener("deviceready", onDeviceReady, true);
@@ -90,8 +91,10 @@
 				}
 				
 				document.addEventListener("backbutton", function(e){
-					$.mobile.changePage("home.html", { transition: "none", changeHash: false });
-				    e.preventDefault();
+					if(paginaAppAtual!='home'){
+						$.mobile.changePage("home.html", { transition: "none", changeHash: false });
+					    e.preventDefault();						
+					}
 				}, false);
 				
 			</script>

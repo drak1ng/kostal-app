@@ -61,6 +61,9 @@
 			
 			<script>
 				
+				
+				paginaAppAtual = "grupos";
+				
 				var tipo_id = window.localStorage.getItem('tipo_id');
 				var titulo = "Grupos";
 				
@@ -70,7 +73,7 @@
 				
 				$('#grupos-titulo').html('<b>'+titulo+'</b>');
 				
-				$.get("http://kostal.projetotemporario.com.br/app_api/grupos.php", { id:tipo_id }, function(data){
+				$.get("https://kostalbrasil.com.br/app_api/grupos.php", { id:tipo_id }, function(data){
 					$("#grupos-conteudo").html(data);
 				});
 				
